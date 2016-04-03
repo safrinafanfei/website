@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="simple-expand.min.js"></script>
+	<style>
+	/* The animation code */
+	@keyframes example {
+		0%   {left:0px; }
+		10%  {left:-100px; }
+		20%  {left:-200px; }
+		30%  {left:-300px; }
+		40%  {left:-400px; }
+		50% {left:-500px;}
+		60%  {left:-600px; }
+		70%  {left:-700px; }
+		80%  {left:-800px; }
+		90%  {left:-900px; }
+		100% {left:-1000px;}
+	}
+
+	#moving{
+		position: absolute;
+		animation-name: example;
+		animation-duration: 10s;
+	}
+
+	h1{
+		font-family: serif;
+		font-size: 60px;
+		font-weight: 1200;	
+		position: relative;
+		left:50px;
+		color: #083a21;				
+		opacity: 0.8;
+	}
+
+	h2{
+		font-family: serif;
+		font-size: 40px;
+		position: relative;
+		left:50px;
+		top:-40px;
+		color: #083a21;
+		opacity: 0.9;
+	}
+
+	h3{
+		font-family: "Helvetica Neue";
+		font-size: 20px;
+		position: relative;
+		left:60px;
+		top:-40px;
+		color: white;
+		opacity: 0.9;
+
+	}
+
+	.bg {
+		position: absolute;
+		left: -10px;
+		top: -90px;
+		width: 2400px;
+		height: 70%;
+		z-index: -1;
+		overflow: hidden;
+	}
+
+	.bg:hover{
+		-webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+		animation-play-state: paused;
+	}
+
+	.expander{
+		background-color: white;
+		border: none;
+		color: white;
+		padding: 10px 30px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 4px 2px;
+		font-family: "Georgia";
+		font-size: 20px;
+		position: relative;
+		color: #083a21;
+		top:-50px;
+		left:60px;
+	}
+
+	.expander:hover{
+		color: #cfd8d3;
+		-webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+		animation-play-state: paused;
+
+	}
+
+	.pause{
+		position: relative;
+		left:560px;
+		top:300px;
+		width: 100px;
+	}
+
+	.go{
+		position: relative;
+		left:550px;
+		top:250px;
+		width: 100px;
+	}
+
+	.back{
+		position: relative;
+		left:350px;
+		top:250px;
+		width: 100px;
+	}
+
+	.circle{
+		color: #083a21;
+		background-color: white;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		font-size: 24px;
+		padding:5px;
+		padding-left: 15px;
+		margin:5px;
+
+	}
+
+	#rank1{
+		left:100px;
+		top:-55px;
+
+	}
+
+	#rank2{
+		position: relative;
+		left:400px;
+		top:30px;
+
+	}
+
+	#rank3{
+		position: relative;
+		left:500px;
+		top:-200px;
+
+	}
+
+	#rank4{
+		position: relative;
+		left:760px;
+		top:-220px;
+
+	}
+
+	#rank5{
+		position: relative;
+		left:1160px;
+		top:-280px;
+	}
+
+	#rank6{
+		position: relative;
+		left:1460px;
+		top:-500px;
+
+	}
+
+	#rank7{
+		position: relative;
+		left:1860px;
+		top:-500px;
+	}
+
+
+	.content {
+		display:none;
+		background-color: white;
+		position: relative;
+		left:400px;
+		top:-106px;
+		width: 600px;
+		height:200px;
+		padding: 20px;
+		margin: 10px;
+	}
+	.content_image{
+		width: 220px;
+		float: left;
+		margin-right:20px;
+	}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Forward From 40:</h1>
+	<h2>The top healthcare milestones of the past 40 years</h2>
+	<h3>By Modern Healthcare  | March 26, 2016</h3>
+	<div id = "moving">
+		<img class="bg" src="xindiantu2.jpg">
+		<div id="rank1">
+			<div class= "circle">1</div>
+			<a class="expander" href="#">Sequencing the human genome</a>
+			<div class ="content">				
+				<p><img class="content_image" src="CH104499324.jpg" >In June 2000, President Bill Clinton, flanked by Dr. Francis Collins, then director of the National Human Genome Research Institute at NIH, and Dr. Craig Venter, CEO of Celera Genomics, jointly announce the sequencing of the human genome.</p>				
+			</div>
+		</div>
+
+		<div id="rank2">
+			<div class= "circle">2</div>
+			<a class="expander" href="#">Magnetic resonance imaging</a>
+		</div>
+
+		<div id="rank3">
+			<div class= "circle">3</div>
+			<a class="expander" href="#">The Patient Protection and Affordable Care Act</a>
+		</div>
+
+		<div id="rank4">
+			<div class= "circle">4</div>
+			<a class="expander" href="#">Smallpox eradicated</a>
+		</div>
+
+		<div id="rank5">
+			<div class= "circle">5</div>
+			<a class="expander" href="#">First AIDS case identified</a>
+		</div>
+
+
+		<div id="rank6">
+			<div class= "circle">6</div>
+			<a class="expander" href="#">Sequencing the human genome</a>
+			<div class ="content">				
+				<p><img class="content_image" src="CH104499324.jpg" >In June 2000, President Bill Clinton, flanked by Dr. Francis Collins, then director of the National Human Genome Research Institute at NIH, and Dr. Craig Venter, CEO of Celera Genomics, jointly announce the sequencing of the human genome.</p>				
+			</div>
+		</div>
+
+		<div id="rank7">
+			<div class= "circle">7</div>
+			<a class="expander" href="#">Magnetic resonance imaging</a>
+		</div>s
+		
+	</div>
+
+	<img class="pause" src="pause.png">
+	<img class="go" src="go.png">
+	<img class="back" src="back.png">
+
+	<script type="text/javascript">
+	$('.expander').simpleexpand();
+	</script>
+</body>
+</html>
